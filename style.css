@@ -1,0 +1,112 @@
+/* Custom CSS for Bootstrap Task Website */
+/* Only minimal custom styles are added where absolutely necessary */
+
+/* Custom gradient backgrounds for carousel slides */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+}
+
+.bg-gradient-success {
+    background: linear-gradient(135deg, #198754 0%, #146c43 100%);
+}
+
+.bg-gradient-info {
+    background: linear-gradient(135deg, #0dcaf0 0%, #087990 100%);
+}
+
+/* Ensure minimum height for carousel slides */
+.carousel-slide {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Smooth transitions for hover effects on cards */
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+}
+
+/* Custom styling for social media links */
+footer a:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+/* Ensure proper spacing for fixed navbar */
+body {
+    padding-top: 76px;
+}
+
+/* Custom form focus states */
+.form-control:focus,
+.form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom button hover effects */
+.btn {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Ensure accordion buttons don't have unnecessary padding */
+.accordion-button {
+    padding: 0.75rem 0;
+    font-size: 0.9rem;
+}
+
+/* Style for contact form validation */
+.was-validated .form-control:valid,
+.was-validated .form-select:valid {
+    border-color: #198754;
+}
+
+.was-validated .form-control:invalid,
+.was-validated .form-select:invalid {
+    border-color: #dc3545;
+}
+
+/* Responsive font sizes for hero sections */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    .display-6 {
+        font-size: 1.75rem;
+    }
+    
+    /* Adjust body padding for mobile */
+    body {
+        padding-top: 70px;
+    }
+}
+
+/* Ensure proper spacing in team cards */
+.card-body .rounded-circle {
+    flex-shrink: 0;
+}
+
+/* Custom styling for feature icons */
+.rounded-circle i {
+    line-height: 1;
+}
+
+/* Ensure sticky positioning works properly */
+.sticky-top {
+    z-index: 1020;
+}

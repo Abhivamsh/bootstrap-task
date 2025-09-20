@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Task - Contact</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-bootstrap"></i> BootstrapTask
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-primary text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="display-4 fw-bold mb-3">Contact Us</h1>
+                    <p class="lead">Get in touch with our team - we'd love to hear from you!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Form -->
+                <div class="col-lg-8">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-5">
+                            <h3 class="fw-bold mb-4">Send us a Message</h3>
+                            <form id="contactForm" novalidate>
+                                <div class="row g-3">
+                                    <!-- Name Fields -->
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name *</label>
+                                        <input type="text" class="form-control" id="firstName" name="firstName" required>
+                                        <div class="invalid-feedback">
+                                            Please provide your first name.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name *</label>
+                                        <input type="text" class="form-control" id="lastName" name="lastName" required>
+                                        <div class="invalid-feedback">
+                                            Please provide your last name.
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Email -->
+                                    <div class="col-12">
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid email address.
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Phone -->
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone">
+                                        <div class="form-text">Optional - we'll call if needed</div>
+                                    </div>
+                                    
+                                    <!-- Subject -->
+                                    <div class="col-md-6">
+                                        <label for="subject" class="form-label">Subject *</label>
+                                        <select class="form-select" id="subject" name="subject" required>
+                                            <option value="" disabled selected>Choose a subject</option>
+                                            <option value="general">General Inquiry</option>
+                                            <option value="web-development">Web Development</option>
+                                            <option value="ui-design">UI/UX Design</option>
+                                            <option value="support">Technical Support</option>
+                                            <option value="partnership">Partnership</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select a subject.
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Message -->
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message *</label>
+                                        <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Tell us about your project or inquiry..."></textarea>
+                                        <div class="invalid-feedback">
+                                            Please provide a message.
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Newsletter Signup -->
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter">
+                                            <label class="form-check-label" for="newsletter">
+                                                Subscribe to our newsletter for updates and tips
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Privacy Agreement -->
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="privacy" name="privacy" required>
+                                            <label class="form-check-label" for="privacy">
+                                                I agree to the <a href="#" class="text-decoration-none">Privacy Policy</a> and <a href="#" class="text-decoration-none">Terms of Service</a> *
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                Please accept the privacy policy.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Submit Button -->
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-lg px-5">
+                                            <i class="bi bi-send me-2"></i>Send Message
+                                        </button>
+                                        <button type="reset" class="btn btn-outline-secondary btn-lg ms-2">
+                                            <i class="bi bi-arrow-clockwise me-2"></i>Reset Form
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="col-lg-4">
+                    <div class="sticky-top" style="top: 100px;">
+                        <!-- Contact Details -->
+                        <div class="card shadow-sm border-0 mb-4">
+                            <div class="card-body p-4">
+                                <h5 class="fw-bold mb-4">Get in Touch</h5>
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="bg-primary bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                        <i class="bi bi-geo-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Address</h6>
+                                        <small class="text-muted">123 Web Street<br>New York, NY 10001</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="bg-success bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                        <i class="bi bi-phone"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Phone</h6>
+                                        <small class="text-muted">+1 (555) 123-4567</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="bg-info bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                        <i class="bi bi-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Email</h6>
+                                        <small class="text-muted">info@bootstraptask.com</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="bg-warning bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                        <i class="bi bi-clock"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Business Hours</h6>
+                                        <small class="text-muted">Mon-Fri: 9AM-6PM<br>Sat-Sun: 10AM-4PM</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Media -->
+                        <div class="card shadow-sm border-0 mb-4">
+                            <div class="card-body p-4">
+                                <h5 class="fw-bold mb-4">Follow Us</h5>
+                                <div class="d-flex gap-2">
+                                    <a href="#" class="btn btn-outline-primary btn-sm">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-info btn-sm">
+                                        <i class="bi bi-twitter"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-dark btn-sm">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-danger btn-sm">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </div>
+                                <p class="text-muted small mt-3 mb-0">Stay updated with our latest projects and web development tips.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ -->
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body p-4">
+                                <h5 class="fw-bold mb-4">FAQ</h5>
+                                <div class="accordion accordion-flush" id="faqAccordion">
+                                    <div class="accordion-item">
+                                        <h6 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                                Response Time?
+                                            </button>
+                                        </h6>
+                                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body small text-muted">
+                                                We typically respond to all inquiries within 24 hours during business days.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h6 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                                Project Timeline?
+                                            </button>
+                                        </h6>
+                                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                            <div class="accordion-body small text-muted">
+                                                Project timelines vary based on complexity. We'll provide detailed estimates after initial consultation.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="successModalLabel">
+                        <i class="bi bi-check-circle me-2"></i>Message Sent Successfully!
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-0">Thank you for contacting us! We've received your message and will get back to you within 24 hours.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-bootstrap text-primary"></i> BootstrapTask
+                    </h5>
+                    <p class="text-muted">A modern, responsive website showcasing the power of Bootstrap 5 components and clean web design.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-github fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-muted text-decoration-none">About</a></li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Features</h6>
+                    <ul class="list-unstyled">
+                        <li class="text-muted">Bootstrap 5</li>
+                        <li class="text-muted">Responsive Design</li>
+                        <li class="text-muted">Modern Components</li>
+                        <li class="text-muted">GitHub Pages</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <div class="text-muted">
+                        <div class="mb-2">
+                            <i class="bi bi-envelope me-2"></i>
+                            info@bootstraptask.com
+                        </div>
+                        <div class="mb-2">
+                            <i class="bi bi-phone me-2"></i>
+                            +1 (555) 123-4567
+                        </div>
+                        <div>
+                            <i class="bi bi-geo-alt me-2"></i>
+                            New York, NY 10001
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">&copy; 2024 BootstrapTask. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted">Built with Bootstrap 5 & GitHub Pages</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Form Validation Script -->
+    <script>
+        // Bootstrap form validation
+        (function() {
+            'use strict';
+            
+            // Fetch the form
+            const form = document.getElementById('contactForm');
+            const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+            
+            // Add event listener for form submission
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                
+                // Check if form is valid
+                if (form.checkValidity()) {
+                    // Form is valid - show success modal and reset form
+                    successModal.show();
+                    form.reset();
+                    form.classList.remove('was-validated');
+                } else {
+                    // Form is invalid - show validation feedback
+                    form.classList.add('was-validated');
+                }
+            });
+            
+            // Add event listener for reset button
+            const resetButton = form.querySelector('button[type="reset"]');
+            resetButton.addEventListener('click', function() {
+                form.classList.remove('was-validated');
+            });
+            
+            // Real-time validation for email field
+            const emailField = document.getElementById('email');
+            emailField.addEventListener('input', function() {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (this.value && !emailRegex.test(this.value)) {
+                    this.setCustomValidity('Please enter a valid email address');
+                } else {
+                    this.setCustomValidity('');
+                }
+            });
+            
+            // Phone number formatting (optional)
+            const phoneField = document.getElementById('phone');
+            phoneField.addEventListener('input', function() {
+                let value = this.value.replace(/\D/g, '');
+                if (value.length >= 6) {
+                    value = value.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
+                } else if (value.length >= 3) {
+                    value = value.replace(/(\d{3})(\d{0,3})/, '($1) $2');
+                }
+                this.value = value;
+            });
+        })();
+    </script>
+</body>
+</html>
