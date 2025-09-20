@@ -138,35 +138,35 @@ The AI assistance significantly accelerated development while maintaining code q
 
 ## ⏱️ Development Timeline
 
-**Total Time Invested**: ~4 hours
+**Total Time Invested**: ~45 minutes
 
 ### Time Breakdown:
-- **Planning & Setup**: 30 minutes
+- **Planning & Setup**: 5 minutes
   - Project structure design
   - Bootstrap CDN setup
   - Git repository initialization
 
-- **Homepage Development**: 1.5 hours
+- **Homepage Development**: 15 minute
   - Navbar and footer creation
   - Hero carousel implementation
   - Features section with cards
 
-- **About Page Creation**: 1 hour
+- **About Page Creation**: 5 minutes
   - Services grid development
   - Team section implementation
   - Content integration
 
-- **Contact Page Development**: 1 hour
+- **Contact Page Development**: 5 minutes
   - Contact form with validation
   - Sidebar information layout
   - Modal implementation
 
-- **Styling & Polish**: 30 minutes
+- **Styling & Polish**: 10 minutes
   - Custom CSS additions
   - Responsive testing
   - Cross-browser verification
 
-- **Documentation & Git**: 30 minutes
+- **Documentation & Git**: 5 minutes
   - README creation
   - Code commenting
   - Repository preparation
@@ -218,8 +218,8 @@ bootstrap-task/
 
 For questions or feedback about this project:
 
-- **Email**: info@bootstraptask.com
-- **Phone**: +1 (555) 123-4567
+- **Email**: abhivamsh.kalwala@gmail.com
+- **Phone**: +91 7396003326
 - **GitHub**: [Bootstrap Task Repository](https://github.com/Abhivamsh/bootstrap-task)
 
 ---
