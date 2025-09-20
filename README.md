@@ -2,7 +2,7 @@
 
 A clean, modern, and fully responsive multi-page website built with Bootstrap 5, HTML5, and minimal custom CSS. This project demonstrates the power of Bootstrap's component system and responsive design principles.
 
-🌐 **Live Demo**: [View on GitHub Pages](https://yourusername.github.io/bootstrap-task/)
+🌐 **Live Demo**: [View on GitHub Pages](https://abhivamsh.github.io/bootstrap-task/)
 
 ## 📋 Project Description
 
@@ -195,7 +195,7 @@ bootstrap-task/
 2. Go to repository Settings > Pages
 3. Select "Deploy from a branch"
 4. Choose "main" branch and "/ (root)" folder
-5. Save settings - site will be available at `https://yourusername.github.io/bootstrap-task/`
+5. Save settings - site will be available at `https://abhivamsh.github.io/bootstrap-task/`
 
 ## 📱 Browser Compatibility
 
@@ -220,7 +220,7 @@ For questions or feedback about this project:
 
 - **Email**: info@bootstraptask.com
 - **Phone**: +1 (555) 123-4567
-- **GitHub**: [Bootstrap Task Repository](https://github.com/yourusername/bootstrap-task)
+- **GitHub**: [Bootstrap Task Repository](https://github.com/Abhivamsh/bootstrap-task)
 
 ---
 
